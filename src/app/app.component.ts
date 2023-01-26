@@ -13,5 +13,5 @@ import { Component } from '@angular/core';
 })
 
 export class AppComponent {
-  person!: { name: string; surname: string; };
+  person!: { name: string; surname: string; }; 
 }
