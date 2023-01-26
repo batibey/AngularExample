@@ -4,9 +4,10 @@ import { Component } from '@angular/core';
   selector: 'app-root',
   template: `
 
-  <p>
-    {{person.name}}
-  </p>  
+
+  <div appExample color="green">
+    test
+  </div>
   
   `,
   styleUrls: ['./app.component.scss']
