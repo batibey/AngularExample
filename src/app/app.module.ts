@@ -5,12 +5,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { ExampleDirective } from './directives/example.directive';
+import { CustomifDirective } from './directives/customif.directive';
+import { CustomforDirective } from './directives/customfor.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    ExampleDirective
+    ExampleDirective,
+    CustomifDirective,
+    CustomforDirective
   ],
   imports: [
     BrowserModule,

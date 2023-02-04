@@ -2,15 +2,18 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  template: `
+  template: 
+  `
 
 
-  <div appExample color="green">
-    test
+  <div *appCustomif="true">
+    custom if
   </div>
+  <ul>
+    <li *appCustomfor="5; let i = index">custom for {{i}}</li>
+  </ul>
   
-  `,
-  styleUrls: ['./app.component.scss']
+  `
 })
 
 export class AppComponent {
