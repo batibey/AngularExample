@@ -7,10 +7,11 @@ export class CustomforDirective {
 
   constructor(private templateRef: TemplateRef<any>, private viewConteinerRef: ViewContainerRef) { }
 
-  @Input() set appCustomfor(value:number){
-    for(let i = 0; i < value; i++){
+  @Input() set appCustomfor(value:string[]){
+    for(let i = 0; i < value.length; i++){
       this.viewConteinerRef.createEmbeddedView(this.templateRef, {
-        index:i
+        $implicit: value[i],
+        index : i
       });
     }
   }

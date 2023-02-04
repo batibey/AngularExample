@@ -2,20 +2,20 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  template: 
-  `
+  template: `
 
 
   <div *appCustomif="true">
     custom if
   </div>
+
   <ul>
-    <li *appCustomfor="5; let i = index">custom for {{i}}</li>
+    <li *appCustomfor="names; let name; let index = index">{{name}} - - {{index}}</li>
   </ul>
   
   `
 })
 
 export class AppComponent {
-  person!: { name: string; surname: string; }; 
+  names : string[] = ["Mustafa", "Batı"];
 }
