@@ -7,6 +7,7 @@ import { HomeComponent } from './home/home.component';
 import { ExampleDirective } from './directives/example.directive';
 import { CustomifDirective } from './directives/customif.directive';
 import { CustomforDirective } from './directives/customfor.directive';
+import { CustomPipe } from './pipes/custom.pipe';
 
 @NgModule({
   declarations: [
@@ -14,13 +15,14 @@ import { CustomforDirective } from './directives/customfor.directive';
     HomeComponent,
     ExampleDirective,
     CustomifDirective,
-    CustomforDirective
+    CustomforDirective,
+    CustomPipe
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [CustomPipe],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
