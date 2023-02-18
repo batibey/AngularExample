@@ -10,6 +10,8 @@ import { CustomforDirective } from './directives/customfor.directive';
 import { CustomPipe } from './pipes/custom.pipe';
 import { ParentComponent } from './components/parent_to_child_communication/parent/parent.component';
 import { ChildComponent } from './components/parent_to_child_communication/child/child.component';
+import { ExampleCompComponent } from './example/example-comp/example-comp.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -20,11 +22,13 @@ import { ChildComponent } from './components/parent_to_child_communication/child
     CustomforDirective,
     CustomPipe,
     ParentComponent,
-    ChildComponent
+    ChildComponent,
+    ExampleCompComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [CustomPipe],
   bootstrap: [AppComponent]

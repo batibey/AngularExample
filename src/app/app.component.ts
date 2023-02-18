@@ -3,7 +3,9 @@ import { CustomPipe } from './pipes/custom.pipe';
 
 @Component({
   selector: 'app-root',
-  templateUrl: 'app.component.html'
+  template : `
+  <app-example-comp data="merhaba"></app-example-comp>
+  `
 })
 
 export class AppComponent {
