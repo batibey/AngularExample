@@ -3,7 +3,7 @@ import { Component, Input } from '@angular/core';
 @Component({
   selector: 'app-child',
   template: `
-  <p>child works!!</p>
+  <p>child works!! TEST</p>
   {{childData}}
   `
 })
